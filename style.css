@@ -20,7 +20,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: ;
+  z-index: 3;
   border-bottom: 1px solid transparent;
   transition: all 0.45s ease;
   padding: 22px;
@@ -287,6 +287,9 @@ header.sticky {
     border-radius: 0px 0px 25px 25px;
     -moz-border-radius: 0px 0px 25px 25px;
     -webkit-border-radius: 0px 0px 25px 25px;
+    border-bottom: 2px solid var(--text-color);
+    border-left: 2px solid var(--text-color);
+    border-right: 2px solid var(--text-color);
   }
 
   .logo {
