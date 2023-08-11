@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous" />
+  </head>
+  <body>
+    <header>
+      <nav class="header_nav">
+        <ul class="nav_content">
+          <li class="nav_item"><a href="#home" class="nav_a">Главное</a></li>
+          <li class="nav_item"><a href="#about" class="nav_a">Об отеле</a></li>
+          <li class="nav_item">
+            <a href="#nomer" class="nav_a">Номерной фонд</a>
+          </li>
+          <li class="nav_item">
+            <a href="#"><img src="img/hercules_logo.png" alt="" /></a>
+          </li>
+          <li class="nav_item">
+            <a href="#pizzeria" class="nav_a">Пиццерия</a>
+          </li>
+          <li class="nav_item">
+            <a href="#contacts" class="nav_a">Контакты</a>
+          </li>
+          <li class="nav_item"><a href="#info" class="nav_a">Информация</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner">
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="img/banner_1.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img
+                ыенду=""
+                src="img/banner_2.png"
+                class="d-block w-100"
+                alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="img/banner_3.png" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="welcome">
+        <div class="welcome_header">
+          <img src="img/welcome.png" alt="" />
+        </div>
+
+        <div
+          style="
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          ">
+          <span class="text"
+            >Отель расположен в городе Зеленоградск, который с радостью примет
+            как калининградских туристов, так и гостей из других регионов и
+            стран</span
+          >
+          <span class="text"
+            >Пиццерия, сауна, доброжелательный и отзывчивый персонал — это
+            поможет отвлечься от рабочих будней в выходные дни и с удовольствием
+            провести время на берегу Балтийского моря в г. Зеленоградске.</span
+          >
+        </div>
+
+        <div
+          style="
+            max-width: 100%;
+            width: 1200px;
+            display: flex;
+            justify-content: space-around;
+          ">
+          <a href="#" class="icon"> <img src="img/bell.png" alt="" /></a>
+          <a href="#" class="icon"><img src="img/dish.png" alt="" /></a>
+          <a href="#" class="icon"> <img src="img/sea.png" alt="" /></a>
+        </div>
+      </section>
+
+      <section class="booking">
+        <div>
+          <h1 class="section_header">Бронирование номеров</h1>
+        </div>
+        <div style="width: 80%; display: flex; justify-content: space-around">
+          <div class="booking_item">
+            <span class="item_text">Заезд</span>
+            <input
+              class="item_calendar"
+              type="text"
+              unselectable="on"
+              readonly
+              value="13.08.2023" />
+          </div>
+          <div class="booking_item">
+            <span class="item_text">Выезд</span>
+            <input
+              class="item_calendar"
+              type="text"
+              unselectable="on"
+              readonly
+              value="14.08.2023" />
+          </div>
+          <div class="booking_item">
+            <span class="item_text">Гости</span>
+            <input
+              class="item_calendar"
+              type="text"
+              unselectable="on"
+              readonly
+              value="2 взрослых, 0 детей" />
+          </div>
+        </div>
+        <div>
+          <input type="button" value="Найти номера" class="booking_button" />
+        </div>
+      </section>
+
+      <section class="around">
+        <div
+          id="carouselExampleDark"
+          class="carousel slide"
+          data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                style="height: 700px"
+                src="img/banner_1.png"
+                class="d-block w-100"
+                alt="Куршская коса" />
+              <div class="carousel-caption d-none d-md-block">
+                <p class="swiper_text">
+                  Близость Куршской косы дает возможность покататься на
+                  велосипедах, устроить пешие прогулки по пляжу или по лесным
+                  тропам днем, а вечером на летней веранде поделиться приятными
+                  впечатлениями о проведенном отдыхе.
+                  <br />Также в отеле "Геркулес" вы можете забронировать
+                  экскурсии по всему побережью области и Калининграда.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img
+                style="height: 700px"
+                src="img/banner_2.png"
+                class="d-block w-100"
+                alt="Набережная Зеленоградска" />
+              <div class="carousel-caption d-none d-md-block">
+                <p class="swiper_text">
+                  Гостям региона будет очень удобно остановиться на длительное
+                  время в уютных и комфортабельных номерах, близость авто и ж/д
+                  вокзала дает возможность оперативно добраться до Калининграда,
+                  посетить город и вечером успеть поужинать в наших заведениях,
+                  а после прогуляться по променаду или городу и насладиться
+                  вечерним закатом.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img
+                style="height: 700px"
+                src="img/banner_3.png"
+                class="d-block w-100"
+                alt="Парк рядом с отелем" />
+              <div class="carousel-caption d-none d-md-block">
+                <p class="swiper_text">
+                  Рядом с отелем находится парк, где люди, предпочитающие
+                  активный образ жизни, могут совершать утренние пробежки,
+                  покататься на велосипедах, поиграть в волейбол или просто
+                  прогуляться по пешим дорожкам исторического центра
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span
+              class="carousel-control-prev-icon"
+              style="color: white"
+              aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span
+              class="carousel-control-next-icon"
+              style="color: white"
+              aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="hotel_swiper">
+        <div
+          style="
+            height: 200px;
+            width: 100%;
+            background: var(--bg-color);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          ">
+          <h1 class="section_header">Фото отеля</h1>
+        </div>
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/banner_1.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner_2.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner_3.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner_3.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner_2.png" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner_1.png" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="transfer">
+        <div
+          style="
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          ">
+          <span class="item_text">
+            Нашим гостям мы предлагаем воспользоваться услугой трансфера, мы
+            встречаем вас у вокзала или аэропорта.
+            <br />Заказать трансфер можно у администратора. Данная услуга
+            оплачивается отдельно.
+          </span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div
+        style="
+          display: flex;
+          justify-content: space-around;
+          align-items: start;
+          flex-direction: column;
+        ">
+        <div>
+          <img src="img/visa.png" alt="" />
+          <img src="img/MasterCard.png" alt="" />
+          <img src="img/mir.png" alt="" />
+        </div>
+        <div>
+          <input
+            type="button"
+            value="Забронировать"
+            class="booking_button"
+            style="width: 300px" />
+        </div>
+        <div>
+          <span>Все права защищены. © 2023, hotel-hercules.ru</span>
+        </div>
+      </div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          align-items: end;
+        ">
+        <span>+7 40150 3-37-20</span>
+        <span>+7 40150 3-37-20</span>
+        <span>hotel@hercules39.ru</span>
+        <span>г. Зеленоградск, ул. Пограничная, 14А</span>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
