@@ -3,8 +3,8 @@
   --second-color: #585e46;
   --text-color: #848d6a;
   --second-text-color: white;
-  --font-size-nav: 15px;
-  --font-size-text: 25px;
+  --font-size-nav: calc((100vw - 480px) / (1920 - 480) * (20 - 16) + 16px);
+  --font-size-text: calc((100vw - 480px) / (1920 - 480) * (24 - 14) + 16px);
 }
 
 * {
@@ -34,6 +34,7 @@ header {
   align-items: center;
   list-style: none;
   font-size: var(--font-size-nav);
+  padding-left: 0;
 }
 
 .nav_item a {
@@ -114,7 +115,7 @@ header {
 }
 
 .item_text {
-  font-size: 24px;
+  font-size: var(--font-size-text);
   color: var(--second-color);
 }
 
@@ -169,6 +170,7 @@ header {
 }
 .item_text {
   text-align: center;
+  font-size: var(--font-size-text);
 }
 
 footer {
