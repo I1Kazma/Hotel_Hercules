@@ -55,10 +55,6 @@ header.sticky {
   margin-bottom: 0;
   font-size: var(--font-size-nav);
   padding-left: 0;
-  border-radius: 0px 0px 25px 25px;
--moz-border-radius: 0px 0px 25px 25px;
--webkit-border-radius: 0px 0px 25px 25px;
-border: 0px solid #000000;
 }
 
 .nav_item a {
@@ -288,15 +284,12 @@ border: 0px solid #000000;
   }
   .nav_content.open {
     top: 100%;
-    .nav_content.open {
-    top: 100%;
     border-radius: 0px 0px 25px 25px;
     -moz-border-radius: 0px 0px 25px 25px;
     -webkit-border-radius: 0px 0px 25px 25px;
     border-bottom: 2px solid var(--text-color);
     border-left: 2px solid var(--text-color);
     border-right: 2px solid var(--text-color);
-  }
   }
 
   .logo {
