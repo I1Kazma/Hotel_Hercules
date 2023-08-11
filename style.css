@@ -10,20 +10,30 @@
 * {
   padding: 0;
   margin: 0;
+  list-style: none;
+  text-decoration: none !important;
+  scroll-behavior: smooth;
 }
 
 header {
-  background: var(--bg-color);
-  height: 125px;
+  /*background: var(--bg-color);*/
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1;
+  border-bottom: 1px solid transparent;
+  transition: all 0.45s ease;
+  padding: 22px;
+}
+
+header.sticky {
+  background: var(--bg-color);
+  border-bottom: 1px solid var(--second-text-color);
+  padding: 12px 15px;
 }
 
 .header_nav {
   width: 100%;
-  height: 125px;
   display: flex;
 }
 
@@ -32,20 +42,18 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  list-style: none;
+  margin-bottom: 0;
   font-size: var(--font-size-nav);
   padding-left: 0;
 }
 
 .nav_item a {
   color: var(--second-text-color);
-  text-decoration: none;
 }
 
 .nav_a {
   position: relative;
   cursor: pointer;
-  text-decoration: none;
 }
 
 .nav_a:after {
