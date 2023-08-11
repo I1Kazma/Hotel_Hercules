@@ -20,16 +20,26 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   border-bottom: 1px solid transparent;
   transition: all 0.45s ease;
   padding: 22px;
+}
+
+#menu-icon {
+  font-size: 35px;
+  color: white;
+  z-index: 101;
+  cursor: pointer;
+  margin-left: 25px;
+  display: none;
 }
 
 header.sticky {
   background: var(--bg-color);
   border-bottom: 1px solid var(--second-text-color);
   padding: 12px 15px;
+  z-index: 100;
 }
 
 .header_nav {
@@ -86,7 +96,7 @@ header.sticky {
 }
 
 .welcome {
-  height: 600px;
+  height: 800px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -94,10 +104,25 @@ header.sticky {
   align-items: center;
 }
 
+.welcome_content,
+.transfer_content {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .text {
   font-size: var(--font-size-text);
   color: var(--text-color);
   text-align: center;
+}
+
+.icons {
+  max-width: 100%;
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .booking {
@@ -159,6 +184,10 @@ header.sticky {
   color: var(--second-text-color);
 }
 
+.carousel {
+  z-index: 2;
+}
+
 .carousel-indicators [data-bs-target] {
   border-radius: 50%;
   width: 30px !important;
@@ -181,10 +210,83 @@ header.sticky {
   font-size: var(--font-size-text);
 }
 
-footer {
+.footer_content {
   background: var(--bg-color);
   height: 300px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 30px 7%;
+  align-items: center;
+  font-size: var(--font-size-text);
+  color: var(--second-text-color) !important;
+}
+
+.footer_col1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contacts {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.las {
+  font-size: 50px;
+}
+
+@media (max-width: 840px) {
+  #menu-icon {
+    display: block;
+    color: white;
+  }
+
+  .bx-x {
+    color: var(--text-color);
+  }
+
+  .w-100 {
+    height: 100vh;
+  }
+
+  .nav_content {
+    position: absolute;
+    top: -1000px;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    text-align: left;
+    transition: all 0.45s ease;
+  }
+
+  .nav_content a {
+    display: block;
+    margin: 17px;
+    font-size: 20px;
+    transition: all 0.45s ease;
+    color: var(--text-color);
+  }
+
+  .nav_content a:hover {
+    color: var(--main-color);
+  }
+  .nav_content a.active {
+    color: var(--text-color);
+  }
+  .nav_content.open {
+    top: 100%;
+  }
+
+  .logo {
+    display: none;
+  }
 }
