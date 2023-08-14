@@ -45,7 +45,7 @@
       <div class="bx bx-menu" id="menu-icon"></div>
     </header>
 
-   <main>
+    <main>
       <section class="banner">
         <div
           id="carouselExampleSlidesOnly"
@@ -84,7 +84,7 @@
             transform: translate(-50%, -50%);
           ">
           <img
-            style="width: 700px; height: 300px"
+            style="max-width: 90%; height: auto; min-width: 300px"
             src="img/hercules_logo.png"
             alt="" />
         </div>
@@ -119,7 +119,7 @@
         <div>
           <h1 class="section_header">Бронирование номеров</h1>
         </div>
-        <div style="width: 80%; display: flex; justify-content: space-around">
+        <div class="booking_grid">
           <div class="booking_item">
             <span class="item_text">Заезд</span>
             <input
@@ -148,7 +148,7 @@
               value="2 взрослых, 0 детей" />
           </div>
         </div>
-        <div>
+        <div style="width: 100%; display: flex; justify-content: center">
           <input type="button" value="Найти номера" class="booking_button" />
         </div>
       </section>
@@ -347,17 +347,18 @@
     <footer>
       <div class="footer_content">
         <div class="footer_col1">
-          <div>
+          <div
+            style="
+              width: 100%;
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+            ">
             <img src="img/visa.png" alt="" />
             <img src="img/MasterCard.png" alt="" />
             <img src="img/mir.png" alt="" />
           </div>
           <div>
-            <input
-              type="button"
-              value="Забронировать"
-              class="booking_button"
-              style="width: 300px" />
+            <input type="button" value="Забронировать" class="booking_button" />
           </div>
           <div>
             <span>Все права защищены. © 2023, hotel-hercules.ru</span>
