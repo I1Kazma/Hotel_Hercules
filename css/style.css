@@ -15,6 +15,15 @@
   scroll-behavior: smooth;
 }
 
+dl,
+ol,
+ul {
+  padding-left: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 .page_title {
   font-family: "Caravan", cursive;
   font-size: 150px;

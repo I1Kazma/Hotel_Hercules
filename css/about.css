@@ -12,9 +12,9 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 55%;
+  width: 80%;
+  padding-bottom: 50px;
   gap: 50px;
-  height: 80vh;
 }
 
 .page_text {
@@ -23,6 +23,24 @@
   text-align: center;
 }
 
+.item_img {
+  width: 150px;
+  height: 150px;
+}
+
+.item_link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
 .about_carousel {
   width: 100%;
+}
+
+.page_items {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
 }
