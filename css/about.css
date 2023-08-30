@@ -44,3 +44,22 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
 }
+
+.accordion-flush {
+  width: 100%;
+}
+
+.accordion-button {
+  color: var(--text-color) !important;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.accordion-button::after {
+  content: "\e800" !important;
+  font-family: fontello !important;
+  background-image: none !important;
+  font-size: 23px;
+  height: auto !important;
+  width: auto !important;
+}

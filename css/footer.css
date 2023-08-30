@@ -1,28 +1,31 @@
 .footer_content {
   background: var(--bg-color);
-  height: 300px;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
   padding: 30px 7%;
-  align-items: center;
   font-size: var(--font-size-text);
   color: var(--second-text-color) !important;
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  position: relative;
 }
 
-.footer_col1 {
+.footer_payment_booking {
   display: flex;
-  justify-content: space-between;
   align-items: start;
   flex-direction: column;
-  gap: 25px;
-  height: 306px;
+  gap: 50px;
+}
+
+.booking_button_wrapper {
+  width: 100%;
 }
 
 .payment {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+  grid-template-rows: 90px;
 }
 
 .contacts {
@@ -33,15 +36,45 @@
   align-items: end;
 }
 
-.las {
-  font-size: 50px;
+.contacts_item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.footer_content {
-  min-height: 400px;
+.las {
+  font-size: 50px;
 }
 
 .payment_img {
   max-width: 150px;
   height: 50px;
+}
+
+.payment_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .copyright {
+    position: absolute;
+    bottom: 7px;
+  }
+
+  .contacts {
+    padding-bottom: 20px;
+  }
+
+  .payment {
+    grid-template-columns: repeat(auto-fit, minmax(179px, auto));
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .booking_button {
+    max-width: 100%;
+  }
 }
