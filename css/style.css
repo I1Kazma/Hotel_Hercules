@@ -202,6 +202,7 @@ ul {
 
 .carousel {
   z-index: 2;
+  width: 100%;
 }
 
 .w-100 {
